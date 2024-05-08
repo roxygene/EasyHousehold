@@ -1,6 +1,9 @@
 package com.roksanagulewska.easyhousehold.lists
 
-data class CustomElement(override val name: String, override val authorId: Long) : ElementOfList(name, authorId) {
+import androidx.room.Entity
+
+@Entity("custom_elements")
+data class CustomElement(override val name: String, override val authorId: Long, override val listId: Long) : ElementOfList(name, authorId, listId) {
 
 
 }

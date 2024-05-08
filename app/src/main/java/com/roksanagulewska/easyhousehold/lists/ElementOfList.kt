@@ -2,7 +2,7 @@ package com.roksanagulewska.easyhousehold.lists
 
 import androidx.room.PrimaryKey
 
-abstract class ElementOfList(open val name: String, open val authorId: Long) {
+abstract class ElementOfList(open val name: String, open val authorId: Long, open val listId: Long) {
     companion object {
         const val NOBODY = 0
     }
